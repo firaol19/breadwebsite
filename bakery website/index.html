@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bakery website</title>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/e194234370.js" crossorigin="anonymous"></script>
+        <script src="js.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Fira Bakery</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"  >
+                            <a href="#home" class="nav__link " id="nav-item1" onclick="coverMenu()">Home</a>
+                        </li>
+                        <li class="nav__item" >
+                            <a href="#new" class="nav__link" id="nav-item2" onclick="coverMenu()">News</a>
+                        </li>
+                        <li class="nav__item" >
+                            <a href="#about" class="nav__link" id="nav-item3" onclick="coverMenu()">About us</a>
+                        </li>
+                        <li class="nav__item" >
+                            <a href="#favorite" class="nav__link" id="nav-item4" onclick="coverMenu()">Favorites</a>
+                        </li>
+                        <li class="nav__item" >
+                            <a href="#visit" class="nav__link" id="nav-item5" onclick="coverMenu()">Location</a>
+                        </li>
+                    </ul>
+                    <div class="nav__close" id="nav-close" onclick="coverMenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <img src="images/bread-4.png" alt="image" class="nav__img-1">
+                    <img src="images/bread-1.png" alt="image" class="nav__img-2">
+                </div>
+                <div class="nav__toggle" id="nav-toggle" onclick="showMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <div class="blur__header" id="header1"></div>
+        </header>
+        <main class="main">
+            <!--################### home #############-->
+            <section class="home section" id="home">
+                <img src="images/home-bg.jpg" alt="image" class="home__bg">
+                <div class="home__shadow"></div>
+
+                <div class="home__container container grid">
+                        <div class="home__data">
+                            <h1 class="home__title" id="home-title">
+                                Select Your <br> Best  and <br> Favorite Breads
+                            </h1>
+        
+                            <a href="#" class="button">select Breads</a>
+                        
+                        <img src="images/bread-1.png" alt="image" class="home__bread">
+                        </div>
+                        <div class="home__image">
+                            <img src="images/home-bread.png" alt="image" class="home__img" id="home-img">
+                        </div>
+                        <footer class="home__footer">
+                            <div class="home__location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Adiss Abeba <br>Bole</span>
+                            </div>
+        
+                            <div class="home__social">
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+        
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+        
+                                <a href="#" target="_blank">
+                                    <i class="fa-brands fa-square-youtube"></i>
+                                </a>
+                            </div>
+                        </footer>
+                </div>
+                
+                
+            </section>
+            <section class="new section " id="new">
+                <h2 class="section__title">New Breads</h2>
+
+                <div class="new__container container grid " >
+                    <div class="new__content grid">
+                        <article class="new__card">
+                            <div class="new__data">
+                                <h2 class="new__title">Rye Bread</h2>
+                                <p class="new__description">
+                                    Baked with healthy, gluten-free
+                                    sourdough for good nutrition.
+                                </p>
+                            </div>
+
+                            <img src="images/new-bread-1.png" alt="image" class="new__img new-img1">
+                        </article>
+
+                        <article class="new__card">
+                            <div class="new__data">
+                                <h2 class="new__title">Whole Grain Bread</h2>
+                                <p class="new__description">
+                                    Crispy and homemade prepard
+                                    from organic yeast-free flour.
+                                </p>
+                            </div>
+
+                            <img src="images/new-bread-2.png" alt="image" class="new__img" id="new-img">
+                        </article>
+
+                        <article class="new__card">
+                            <div class="new__data">
+                                <h2 class="new__title">Multigrain Bread</h2>
+                                <p class="new__description">
+                                    Tasty and made with different 
+                                    natural grains from the countryside.
+                                </p>
+                            </div>
+
+                            <img src="images/new-bread-3.png" alt="image" class="new__img new-img1">
+                        </article>
+                    </div>
+                    <a href="#" class="new__button button">See More Breads</a>
+                </div>
+            </section>
+            <section class="about section " id="about">
+                <div class="about__container container grid ">
+                    <div class="about__data" id="about-data">
+                        <h2 class="section__title">About Us</h2>
+
+                        <p class="about__description">
+                            We prepare all types of bread that are made at home,
+                            maintaing the traditional of using only best ingridients 
+                            made with local products whenever pssible. we have an
+                            extensive line of freshly prepared bakery and coffee products.
+                        </p>
+
+                        <a href="#" class="button">Know More</a>
+
+                        <img src="images/bread-2.png" alt="image" class="about__bread">
+                    </div>
+
+                    <img src="images/about-bread.png" alt="image" class="about__img">
+                </div>
+            </section>
+            <section class="favorite section " id="favorite">
+                <h2 class="section__title">Customer Favorites</h2>
+
+                <div class="favorite__container container grid ">
+                    <article class="favorite__card">
+                        <img src="images/favorite-bread-1.png" alt="img" class="favorite__img fav-img">
+
+                        <div class="favorite__data">
+                            <h2 class="favorite__title">Whole Grain</h2>
+                            <span class="favorite__subtitle">Bread</span>
+                            <h3 class="favorite__price">$3.00</h3>
+                        </div>
+
+                        <button class="favorite__button button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </article>
+
+                    <article class="favorite__card">
+                        <img src="images/favorite-bread-2.png" alt="img" class="favorite__img fav-img1">
+
+                        <div class="favorite__data">
+                            <h2 class="favorite__title">Rye</h2>
+                            <span class="favorite__subtitle">Bread</span>
+                            <h3 class="favorite__price">$4.00</h3>
+                        </div>
+
+                        <button class="favorite__button button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </article>
+
+                    <article class="favorite__card">
+                        <img src="images/favorite-bread-3.png" alt="img" class="favorite__img fav-img">
+
+                        <div class="favorite__data">
+                            <h2 class="favorite__title">Wheat</h2>
+                            <span class="favorite__subtitle">Bread</span>
+                            <h3 class="favorite__price">$1.50</h3>
+                        </div>
+
+                        <button class="favorite__button button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </article>
+
+                    <article class="favorite__card">
+                        <img src="images/favorite-bread-4.png" alt="img" class="favorite__img fav-img1">
+
+                        <div class="favorite__data">
+                            <h2 class="favorite__title">Multigrain</h2>
+                            <span class="favorite__subtitle">Bread</span>
+                            <h3 class="favorite__price">$2.50</h3>
+                        </div>
+
+                        <button class="favorite__button button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </article>
+
+                    <article class="favorite__card">
+                        <img src="images/favorite-bread-5.png" alt="img" class="favorite__img fav-img">
+
+                        <div class="favorite__data">
+                            <h2 class="favorite__title">Sourdough</h2>
+                            <span class="favorite__subtitle">Bread</span>
+                            <h3 class="favorite__price">$3.00</h3>
+                        </div>
+
+                        <button class="favorite__button button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </article>
+
+                    <article class="favorite__card">
+                        <img src="images/favorite-bread-6.png" alt="img" class="favorite__img fav-img1">
+
+                        <div class="favorite__data">
+                            <h2 class="favorite__title">French</h2>
+                            <span class="favorite__subtitle">Bread</span>
+                            <h3 class="favorite__price">$1.50</h3>
+                        </div>
+
+                        <button class="favorite__button button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+            <section class="visit section " id="visit">
+                <div class="visit__container ">
+                    <img src="images/visit-bg.jpg" alt="image" class="visit__bg">
+                    <div class="visit__shadow"></div>
+
+                    <div class="visit__content container grid">
+                        <div class="visit__data" id="visit-data">
+                            <h2 class="section__title">Visit Us</h2>
+
+                            <p class="visit__description">
+                                Discover the best bread, we look forward
+                                to your visit
+                            </p>
+
+                            <a href="#" class="button">See Location</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer ">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">Fira Bakery</a>
+                    <p class="footer__description">
+                        We make the best bread <br> in the city.
+                    </p>
+                </div>
+                <div class="footer__content grid">
+                    <div>
+                        <h3 class="footer__title">Address</h3>
+
+                        <ul class="footer__list">
+                            <li>
+                                <address class="footer__info">Adiss Abeba<br> Bole</address>
+                            </li>
+
+                            <li>
+                                <address class="footer__info">8AM - 12PM</address>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Contact Me</h3>
+
+                        <ul class="footer__list">
+                            <li>
+                                <address class="footer__info">firabekery@gmail.com</address>
+                            </li>
+
+                            <li>
+                                <address class="footer__info">+251 904 846 321</address>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Follow Us</h3>
+
+                        <div class="footer__social">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+    
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+    
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-square-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <span class="footer__copy">ALL Rights Reserved By firacode</span>
+        </footer>
+
+        <a href="#home" class="scrollup" id="scroll-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+
+
+        <script src="js2.js"></script>
+        <script src="js1.js"></script>
+
+    </body>
+</html>
